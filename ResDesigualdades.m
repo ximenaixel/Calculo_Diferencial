@@ -58,10 +58,27 @@ grid
 	plot([0,0],[-20, 15],'k',"linewidth",1) %eje y
   grid
   
-  %Graficas de Intervalos 
- % Grafica de inecuacion de primer grado
- x=(-5):0.01:5;y=((x)+(2)>(2));
- subplot(2,3,4),plot(x,y),title('(0 < x, x < oo)');
+ %Graficas de Intervalos 
+  %Grafica de inecuacion de primer grado
+  	x=(-5):0.01:5;y=((x)+(2)>(2));
+	subplot(2,3,4),plot(x,y),title('(0 < x, x < oo)');
+hold on
+	plot([-6, 6],[0,0],'k',"linewidth",1); %eje x
+	plot([0,0],[-4, 6],'k',"linewidth",1); %eje y
+grid
+
+%Grafica de inecuacion de segundo grado
+	x=(-5):0.01:10;y=((x.^2)>(3)*((x)+(6)));
+	subplot(2,3,5),plot(x,y),title('(-oo < x, x < -3)U(6 < x, x < oo)');
  hold on
 	plot([-10, 10],[0,0],'k',"linewidth",1); %eje x
-	plot([0,0],[-10, 10],'k',"linewidth",1) %eje y 
+	plot([0,0],[-10, 10],'k',"linewidth",1); %eje y
+grid
+	
+%Grafica de inecuacion con valor absoluto
+	x=(-3):0.01:3;y=(abs((3)*(x)-(2))<=(1));
+	subplot(2,3,6),plot(x,y),title('[1/3 <= x, x <= 1]');
+hold on
+	plot([-3, 3],[0,0],'k',"linewidth",1); %eje x
+	plot([0,0],[-2, 4],'k',"linewidth",1); %eje y
+grid
