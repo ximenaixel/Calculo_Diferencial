@@ -13,7 +13,7 @@ clear
 pkg load symbolic
 syms x; %Esto reconoce x como variable simbolica
 disp('');
-disp('RESOLUCIÓN DE DESIGUALDADES (Inecuaciones)');
+disp('RESOLUCIÃ“N DE DESIGUALDADES (Inecuaciones)');
 disp('');
 disp('Inecuacion de Primer grado');
 disp('Inecuacion: x+2>2');
@@ -58,4 +58,10 @@ grid
 	plot([0,0],[-20, 15],'k',"linewidth",1) %eje y
   grid
   
-  %Graficas de Intervalos
+  %Graficas de Intervalos 
+ % Grafica de inecuacion de primer grado
+ x=(-5):0.01:5;y=((x)+(2)>(2));
+ subplot(2,3,4),plot(x,y),title('(0 < x, x < oo)');
+ hold on
+	plot([-10, 10],[0,0],'k',"linewidth",1); %eje x
+	plot([0,0],[-10, 10],'k',"linewidth",1) %eje y 
