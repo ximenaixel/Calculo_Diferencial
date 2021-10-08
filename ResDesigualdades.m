@@ -1,6 +1,6 @@
 % Octave Script
 % Title			    :Resolucion de Desigualdades
-% Description		:Script que resuleve inecuacion de primer, segundo grado y con valor absoluto
+% Description		:Script que resuelve inecuacion de primer, segundo grado y con valor absoluto
 % Authors		    :Ximena Ixel Garcia Agustin
 %			          :Sarai Lucas Nieto
 %			          :Suseth Abigail Sandoval Damian
@@ -30,13 +30,11 @@ disp('');
 disp('Inecuacion de Segundo grado');
 disp('Inecuacion: x^2>3(x+6)');
 	solve(x^2>3*(x+6),'returnconditions')
-	
-	
+		
 disp('');
 disp('Inecuacion con valor absoluto');
 disp('Inecuacion: |3x-2|<=1');
-	solve(abs(3*x-2)<=1,'returnconditions')
-	
+	solve(abs(3*x-2)<=1,'returnconditions')	
 
 %Graficas
 %Graficas de ecuaciones
