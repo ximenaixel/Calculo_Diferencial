@@ -25,7 +25,6 @@ disp('Inecuacion: x+2>2');
 	plot([-10, 10],[0,0],'k',"linewidth",1); %eje x
 	plot([0,0],[-10, 10],'k',"linewidth",1) %eje y
 
-
 disp('');
 disp('Inecuacion de Segundo grado');
 disp('Inecuacion: x^2>3(x+6)');
@@ -36,8 +35,6 @@ disp('');
 disp('Inecuacion con valor absoluto');
 disp('Inecuacion: |3x-2|<=1');
 	solve(abs(3*x-2)<=1,'returnconditions')
-	
-
 %Graficas
 %Graficas de ecuaciones
 %Grafica Desigualdad segundo grado
