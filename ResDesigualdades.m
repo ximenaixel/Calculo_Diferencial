@@ -1,9 +1,9 @@
 % Octave Script
 % Title			    :Resolucion de Desigualdades
-% Description		:Script que resuleve inecuacion de primer, segundo grado y con valor absoluto
+% Description		    :Script que resuelve inecuacion de primer, segundo grado y con valor absoluto
 % Authors		    :Ximena Ixel Garcia Agustin
-%			          :Sarai Lucas Nieto
-%			          :Suseth Abigail Sandoval Damian
+%			    :Sarai Lucas Nieto
+%			    :Suseth Abigail Sandoval Damian
 % Date			    :20211007
 % Version		    :2
 % Usage			    :octave> /path/ResDesigualdades
