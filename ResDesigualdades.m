@@ -43,8 +43,9 @@ disp('Inecuacion: |3x-2|<=1');
 %Grafica Desigualdad segundo grado
 grid
 	x=(-5):0.01:10;y=((x.^2)-(3)*(x)-(18));
-  %x=(-5):0.01:10;y=((x.^2)>(3)*((x)+(6)));
-	subplot(2,3,2),plot(x,y),title('x^2>3(x+6)');
+  
+	subplot(2,3,2),plot(x,y),title('x^2>3(x+6)'); 
+
   hold on
 	plot([-10, 10],[0,0],'k',"linewidth",1); %eje x
 	plot([0,0],[-40, 60],'k',"linewidth",1) %eje y
@@ -65,3 +66,19 @@ subplot(2,3,4),plot(x,y),title('(0 < x, x < oo)');
 hold on
 	plot([-10, 10],[0,0],'k',"linewidth",1); %eje x
 	plot([0,0],[-10, 10],'k',"linewidth",1) %eje y
+
+%Grafica de inecuacion de segundo grado
+x=(-5):0.01:10;y=((x.^2)>(3)*((x)+(6)));
+subplot(2,3,5),plot(x,y),title('(-oo < x, x < -3)U(6 < x, x < oo)');
+ hold on
+	plot([-10, 10],[0,0],'k',"linewidth",1); %eje x
+	plot([0,0],[-40, 60],'k',"linewidth",1) %eje y
+	
+%Grafica de inecuacion con valor absoluto
+x=(-3):0.01:3;y=(abs((3)*(x)-(2))<=(1))
+subplot(2,3,6),plot(x,y),title('[1/3 <= x, x <= 1]');
+hold on
+	plot([-10, 10],[0,0],'k',"linewidth",1); %eje x
+	plot([0,0],[-20, 15],'k',"linewidth",1) %eje y
+	 grid
+	 
