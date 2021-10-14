@@ -1,23 +1,23 @@
 %Octave Script
-%Title		:Resolucion de Desigualdades
+%Title	    	:Resolucion de Desigualdades
 %Description	:Script que resuelve una funcion
-%Authors	:Ximena Ixel Garcia Agustin
-%		:Sarai Lucas Nieto
-%		:Suseth Abigail Sandoval Damian
-%Date		:20211013
-% Version	:1
-% Usage		:octave> /path/ResFuncion.m
-% Notes		:Se requiere plicacion Octave
+%Authors    	:Ximena Ixel Garcia Agustin
+%	          	:Sarai Lucas Nieto
+%	          	:Suseth Abigail Sandoval Damian
+%Date		      :20211013
+% Version	    :1
+% Usage		    :octave> /path/ResFuncion.m
+% Notes		     :Se requiere aplicacion Octave
 
 % Limpiar variables
 clear
 
-%Calcular minimo de cable de la punta de poste al suelo y a punta de otro poste
+%Calcular el minimo de cable de la punta de poste al suelo y a la punta de otro poste
 
 %Rango de 0 a 50 en i = 1
 b=0:1:20;
 
-% Obtener valor de la función
+% Obtener valor de la funciÃ³n
 c=@(b) (sqrt(225+(b.^2)))+(sqrt(500-(40*b)+(b.^2)));
 
 % Funcion a graficar
@@ -30,7 +30,7 @@ valmin = fminbnd(c,0,20);
 plot(b, y);
 grid
 
-% Titulo de grafica
+% Titulo de la grafica
 title(['Cable minimo en b = ' num2str(valmin)]);
 
 % Etiqueta para eje x
@@ -39,7 +39,7 @@ xlabel(['Min b = ' num2str(valmin)]);
 % Etiqueta para eje y
 ylabel(['Min y = ' num2str(c(valmin))]);
 
-% Salidas
+% Salida del programa
 p = 'Dos postes verticales de 15m y 10m son separados por 20m';
 cal = 'Se calcula la longitud minima de un cable desde la punta de un poste al suelo y a la punta del otro poste';
 disp('');
